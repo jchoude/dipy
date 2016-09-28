@@ -836,7 +836,7 @@ def whole_brain_slr(static, moving,
                   (-10, 10), (-10, 10), (-10, 10)]
         slm = progressive_slr(qb_centroids1, qb_centroids2,
                               x0=x0, metric=None,
-                              bounds=bounds)
+                              bounds=bounds, verbose=verbose)
 
     if verbose:
         print('QB static centroids size %d' % len(qb_centroids1,))

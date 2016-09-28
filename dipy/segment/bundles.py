@@ -231,11 +231,11 @@ class RecoBundles(object):
             print(' Reduction distance {}'.format(reduction_distance))
 
         if reduction_distance.lower() == 'mdf':
-            print(' Using MDF')
+            #print(' Using MDF')
             centroid_matrix = bundles_distances_mdf(self.model_centroids,
                                                     self.centroids)
         elif reduction_distance.lower() == 'mam':
-            print(' Using MAM')
+            #print(' Using MAM')
             centroid_matrix = bundles_distances_mdf(self.model_centroids,
                                                     self.centroids)
         else:
@@ -453,11 +453,11 @@ class RecoBundles(object):
         self.nb_rtransf_centroids = len(self.rtransf_centroids)
 
         if pruning_distance.lower() == 'mdf':
-            print(' Using MDF')
+            #print(' Using MDF')
             dist_matrix = bundles_distances_mdf(self.model_centroids,
                                                 self.rtransf_centroids)
         elif pruning_distance.lower() == 'mam':
-            print(' Using MAM')
+            #print(' Using MAM')
             dist_matrix = bundles_distances_mam(self.model_centroids,
                                                 self.rtransf_centroids)
         else:
