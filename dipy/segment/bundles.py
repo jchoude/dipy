@@ -271,7 +271,7 @@ class RecoBundles(object):
         self.nb_neighb_streamlines = len(self.neighb_streamlines)
 
         if self.nb_neighb_streamlines == 0:
-            print(' You have no neighbor streamlines... No bundle recognition')
+            #print(' You have no neighbor streamlines... No bundle recognition')
             return False
 
         if self.verbose:
